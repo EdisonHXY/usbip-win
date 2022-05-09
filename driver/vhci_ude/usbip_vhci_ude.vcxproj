@@ -123,6 +123,7 @@
     <UdeDriver>true</UdeDriver>
     <UDE_VERSION_MAJOR>1</UDE_VERSION_MAJOR>
     <UDE_VERSION_MINOR>0</UDE_VERSION_MINOR>
+    <Driver_SpectreMitigation>false</Driver_SpectreMitigation>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -244,6 +245,9 @@
     <Inf>
       <TimeStamp>0.3.5.0</TimeStamp>
     </Inf>
+    <DriverSign>
+      <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
+    </DriverSign>
   </ItemDefinitionGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />
